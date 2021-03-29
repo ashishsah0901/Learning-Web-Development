@@ -1,0 +1,1063 @@
+/* * is universal selector it applies to all the elements in the markup */
+
+* {
+    /* this doesnot allow box size to  increase with increase in padding */
+    box-sizing: border-box;
+    margin: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(180, 227, 243);
+}
+
+
+/* p is used to target all paragraphs they might be inside div or anywhere in the markup*/
+
+p {
+    /* to choose font from internet we can go to google fonts and choose fonts and follow the steps given there */
+    font-family: 'Akaya Telivigala', cursive, 'Arial Narrow', Arial, sans-serif;
+    /* 1px = 1/96th of inch */
+    font-size: 30px;
+    /* line height is the gap between two lines em = times parent font size  */
+    line-height: 10em;
+    /* weight is appearence of font   */
+    font-weight: bold;
+    background-color: skyblue;
+    color: snow;
+    border: 2px solid burlywood;
+}
+
+
+/* # is used to target by specific id  */
+
+#para {
+    /* this is a way to select color  */
+    color: #168bcf;
+    font-style: oblique;
+}
+
+
+/* . is used to target all the tags whose class */
+
+.bluebackground {
+    background-color: skyblue;
+    border-top: 2px solid violet;
+    border-top-left-radius: 5px;
+}
+
+.redColor {
+    color: red;
+    height: 100px;
+    width: 50px;
+    border-color: yellow;
+    border-width: 3px;
+    border-style: dotted;
+    border-radius: 10px;
+    /* width style color  */
+    border: 3px dotted yellowgreen;
+}
+
+
+/* , is used to target various tags at the same time  */
+
+h1,
+h5 {
+    /* this is also a way for choosing color  */
+    color: rgb(0, 71, 100);
+}
+
+#emStyling {
+    /* this inserts image in the background */
+    background-image: url("https://source.unsplash.com/user/erondu/200x200");
+    border: 2px solid greenyellow;
+    /* x repeat repeats in x axis y repeat repeats in y axis */
+    background-repeat: no-repeat;
+    /* position of the image in the tag  */
+    background-position: center center;
+}
+
+.box {
+    width: 900px;
+    background-color: rgb(171, 179, 171);
+    /* padding is inside border  */
+    padding: 10px;
+    /* t r b l 
+    padding: 10px 20px 15px 5px; */
+    /* margin is outside border  */
+    margin: 20px;
+    /* t r b l 
+    margin: 20px 30px 40px 15px;
+    top/bottom left/right 
+    margin: 30px 20px; */
+    border-radius: 20px;
+}
+
+
+/* Alignment in CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.container {
+    width: 900px;
+    border: 2px dotted royalblue;
+    /* this is used to set item at center  */
+    margin: 50px auto;
+}
+
+.item {
+    border: 2px solid greenyellow;
+    margin: 10px;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+.para {
+    color: rgb(19, 14, 14);
+}
+
+#fruit {
+    /* this is used to align item to lefy or right  */
+    float: left;
+    /* width is the size of the item respect tomits parent */
+    width: 50%;
+}
+
+#vegetable {
+    float: right;
+    width: 50%;
+}
+
+#grocery {
+    /* to avoid overlapping because of the floating item we use clear to make them seperate  */
+    clear: both;
+    width: 100%;
+}
+
+p {
+    /* this is used for text alignment  */
+    text-align: justify;
+}
+
+.selec {
+    border: 2px solid rgb(21, 173, 173);
+    background-color: burlywood;
+    padding: 30px;
+    margin: 40px auto;
+    width: 600px;
+}
+
+.btn {
+    font-family: 'Akaya Telivigala', cursive;
+    background-color: darkblue;
+    padding: 10px;
+    border: none;
+    /* this changes the mouse pointer when hovered on the item */
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+a {
+    /* this removes the underline or any other inbuilt decoration done for any item like in a we remove the underline  */
+    text-decoration: none;
+    color: black;
+}
+
+
+/* these are pseudo selectors which helps in selection some specific actions of any item  */
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    background-color: cornsilk;
+}
+
+btn:hover {
+    color: cyan;
+    background-color: dimgray;
+}
+
+.navigation {
+    background-color: khaki;
+    border-radius: 30px;
+}
+
+.navigation ul {
+    overflow: auto;
+}
+
+.navigation li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+    margin: 10px 20px;
+}
+
+.navigation li a {
+    padding: 8px;
+    text-decoration: none;
+}
+
+.search {
+    float: right;
+    color: lawngreen;
+    padding: 10px;
+    margin: 9px;
+}
+
+.navigation input {
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.navigation li:hover {
+    color: darkgreen;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+header {
+    margin: auto;
+    width: 1200px;
+    border: 2px solid greenyellow;
+}
+
+.con {
+    background-color: grey;
+    border: 2px solid yellowgreen;
+    margin: 8px;
+    padding: 20px;
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.boxes {
+    display: inline-block;
+    border: 2px solid grey;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+
+/* position in CSS are : static(default) relative absolute sticky fixed  */
+
+#box3 {
+    /* relative means it can be moved realtive to its previous position and will leave a gap */
+    position: relative;
+}
+
+.box1 {
+    /* absolute means it can be moved relative to its parent position  */
+    position: absolute;
+}
+
+.box2 {
+    /* fixed means it is fixed with respect to the browser  */
+    position: fixed;
+    right: 5px;
+}
+
+.box4 {
+    /* sticky means it is sticked to the window it helps to build a menu which remains at the top when we scroll  */
+    position: sticky;
+    top: 5px;
+}
+
+
+/* Website  */
+
+body {
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 0px;
+    margin: 0px;
+    color: whitesmoke;
+    background: url('https://source.unsplash.com/user/erondu/200x200');
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+.left img {
+    width: 130px;
+    /* changes the white color to black and vis a vis  */
+    filter: invert(100%);
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    width: 50%;
+    margin: 29px auto;
+    /* border: 2px solid red; */
+}
+
+.right {
+    position: absolute;
+    top: 43px;
+    right: 34px;
+    display: inline-block;
+    /* border: 2px solid red; */
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.buttton {
+    font-family: 'Akaya Telivigala', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttton:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+.conta {
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}
+
+.form-group inputText {
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.conta h1 {
+    text-align: center;
+}
+
+.conta button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+
+
+/* Visibility and z index */
+
+.box {
+    width: 170px;
+    height: 170px;
+    border: 2px solid black;
+}
+
+#box1 {
+    background-color: greenyellow;
+    position: relative;
+    top: 40px;
+}
+
+#box2 {
+    /* this empties the area occupied by the item  */
+    display: none;
+    position: relative;
+    top: 14px;
+    background-color: red;
+    /* hidden simply hides the item  */
+    visibility: hidden;
+    /* z-index will work only on position relative absolute fixed and sticky but not on static */
+    z-index: -1;
+}
+
+#box3 {
+    background-color: blue
+}
+
+#box4 {
+    background-color: purple;
+}
+
+
+/* Flexbox */
+
+.container {
+    height: 544px;
+    width: 100%;
+    border: 2px solid blue;
+    display: flex;
+    /* Flex Container properties  */
+    /* this is used to show items in row or column  */
+    flex-direction: row;
+    /* flex-direction: column; flex-direction: row-reverse; flex-direction: column-reverse; */
+    /* this wraps to next line when size of the parent is small  */
+    flex-wrap: wrap;
+    /* this helps to set direction and wrap in one line  */
+    flex-flow: row wrap;
+    /* this aligns the item(horizontally) at the center  */
+    justify-content: center;
+    /* this gives equal space between the items  */
+    justify-content: space-between;
+    /* this gives equal space between everything with respect to parent  */
+    justify-content: space-evenly;
+    /* this gives equal space in left and right  */
+    justify-content: space-around;
+    /* this centers the item vertically  */
+    align-items: center;
+    /* end of the container  */
+    align-items: flex-end;
+    /* start of container  */
+    align-items: flex-start;
+    /* makes even vertical spacing  */
+    align-items: stretch;
+}
+
+.item {
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+    height: 200px;
+    width: 200px;
+}
+
+#item1 {
+    /* higher the order later it shows up in the container  */
+    order: 2;
+    /* this grows with proportion to the number specified as item wih 3 will grow 3 times more than other item with change in screen size  */
+    flex-grow: 3;
+}
+
+#item2 {
+    order: 40;
+    /* higher is this property more it will shrink at the time of screen shrinking */
+    flex-shrink: 3;
+    /* grow shrink basis  */
+    flex: 2 2 220px;
+}
+
+#item3 {
+    flex-grow: 2;
+    /* this controls the width of the item when direction is set to row and height when it is column  */
+    flex-basis: 300px;
+    /* this aligns the item to the center of the flex  */
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+}
+
+
+/* Responsive Design  */
+
+html {
+    font-size: 25px;
+}
+
+.container {
+    font-size: 10px;
+    border: 3px solod red;
+    /* this helps to take the full width of the screen  */
+    width: 100vw;
+    /* this helps to take the full height of the screen  */
+    height: 100vh;
+}
+
+h4 {
+    text-align: center;
+}
+
+#id1 {
+    /* em is used to set the size respective to the parent size which means 10em = 10 * parent size */
+    font-size: 10em;
+    /* this will not take the parent size instead the above declared font size */
+    padding: 3em;
+}
+
+#id2 {
+    /* rem uses the font size specified in the html tag rather the parent size  */
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+
+/* Media Query */
+
+.box {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+
+/* this is used when we want ot do some specific task at a specific orientation for eg. in responsive web when the size of the screen is max 300px do this and we can do other things too  */
+
+
+/* only screen is used to specify that we only want to use media query which is screen media query */
+
+@media only screen and (max-width:300px) {
+    #box1 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    #box2 {
+        display: block;
+        background-color: violet;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    #box3 {
+        display: block;
+        background-color: navy;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    #box4 {
+        display: block;
+        background-color: darkred;
+    }
+}
+
+
+/* More on selectors */
+
+
+/* this selects all p which are there in div ot may be at any depth */
+
+div p {
+    color: dimgray;
+    font-weight: bold;
+}
+
+
+/* this selects the immediate p which are there in div  */
+
+div>p {
+    color: forestgreen;
+    background-color: fuchsia;
+}
+
+
+/* this selects the p which is immediately after div which means as soon as the div ends p starts */
+
+div+p {
+    color: gold;
+    background-color: black;
+}
+
+
+/* attribute and nth child pseudo selector  */
+
+.ash {
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+input {
+    display: block;
+}
+
+
+/* this is a pseudo selector which targets with a specific type */
+
+input[type='text'] {
+    padding: 8px;
+    border: 2px solid green;
+}
+
+
+/* this targets the <a></a> tags whose target is set  */
+
+a[target] {
+    font-size: 50px;
+}
+
+
+/* <a></a> whose target is _self  */
+
+a[target='_self'] {
+    font-size: 80px;
+    color: greenyellow;
+}
+
+
+/* this changes the nth child */
+
+li:nth-child(3) {
+    color: hotpink;
+}
+
+
+/* this changes every (2n+1)th child */
+
+li:nth-child(2n+1) {
+    color: hotpink;
+}
+
+
+/* this changes the odd child */
+
+li:nth-child(odd) {
+    color: hotpink;
+}
+
+
+/* this changes the even child */
+
+li:nth-child(even) {
+    color: hotpink;
+}
+
+
+/* before and after  */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ivory;
+    color: rgb(19, 14, 14);
+}
+
+
+/* this adds the content just before the tag specified */
+
+section::before {
+    content: "This is before content";
+}
+
+
+/* this adds the content just after the tag specified */
+
+section::after {
+    content: "This is before content";
+}
+
+
+/* this technique is very useful and it helps to reduce the opacity as when we do it directly it affects the whole page  */
+
+header::before {
+    content: "";
+    /* this sets the image fit to the screen and do center crop  */
+    background: url("https://source.unsplash.com/user/erondu/400x400") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* this moves the image behind the other content  */
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* this reduces the intensity of the image and makes it lighter */
+    opacity: 0.4%;
+}
+
+section {
+    background-origin: 2px solid red;
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+}
+
+.nav {
+    font-size: 20px;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* box shadow and text shadow  */
+
+.container {
+    display: flex;
+}
+
+.card {
+    padding: 20px;
+    margin: 10px;
+    background-color: gainsboro;
+    /* this gives the shadow to the box (x-offset y-offset blur-radius spread-radius color) if the offsets are negative then the shadow is upwards */
+    /*a is used for darkness*/
+    box-shadow: 10px 10px 10px 20px rgba(34, 33, 33, 0.4%);
+    /* this gives the shadow inside the box */
+    /* by seperating the arguements with , we can give multiple shadows  */
+    box-shadow: inset 2px 2px fuchsia, 3px 3px blue;
+}
+
+.card h4 {
+    /* this the shadow to the text */
+    text-shadow: 3px 3px 5px red;
+}
+
+
+/* variable / custom properties */
+
+:root {
+    /* this helps in declaring global variables */
+    --back-color: navy;
+    --maxw: 800px;
+}
+
+.box {
+    /* this is a variable declaration in css  */
+    --box-color: skyblue;
+    width: 200px;
+    height: 200px;
+    background-color: var(--box-color);
+    margin: 10px;
+    box-shadow: 3px 3px var(--box-color);
+    border: 2px solid black;
+}
+
+.con {
+    /* this won't work as the scope of the --box-color is limkted to .box  */
+    background-color: var(--box-color);
+    background-color: var(--back-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--maxw);
+    margin: 10px auto;
+}
+
+
+/* keyframes and animation */
+
+.contains {
+    background-color: violet;
+}
+
+.boxes {
+    background-color: yellowgreen;
+    width: 1300px;
+    height: 300px;
+    position: relative;
+    /* this the shorter way to assign animation  */
+    /* animation: name duration timimg-function delay iteration-count fill-mode */
+    /* this the name of the animation  */
+    animation-name: ashish;
+    /* this is the duration of the animation  */
+    animation-duration: 2s;
+    /* this is the iteration count of the animation  */
+    animation-iteration-count: 3;
+    /* this will save the state of the item to the end of the animation  */
+    animation-fill-mode: forwards;
+    /* this specifies the motion of the animation whether it will move fast in the beginning or at end  */
+    animation-timing-function: ease-out;
+    /* this is just for the delay of the animation */
+    animation-delay: 3s;
+    /* this specifies the direction of the animation  */
+    animation-direction: reverse;
+}
+
+
+/* this is the actual animation */
+
+@keyframes ashish {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 400px;
+    }
+}
+
+
+/* this is the way to choose animation by % */
+
+@keyframes ashish1 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    20% {
+        top: 250px;
+        left: 0px;
+    }
+    80% {
+        top: 250px;
+        left: 250pc;
+    }
+    100% {
+        left: 250px;
+        top: 0px;
+    }
+}
+
+
+/* Transitions */
+
+#box {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    /* this is used for the transition of the item  */
+    /* transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s; */
+    /* one line code for transition  */
+    /* transition: background-color 3s ease-out 1s; */
+    /* all means all the properties will be under transition  */
+    transition: all 3s ease-out 1s;
+}
+
+#box:hover {
+    background-color: cadetblue;
+    height: 300px;
+    width: 300px;
+    border-radius: 100px;
+    font-size: 35px;
+}
+
+
+/* Transform */
+
+* {
+    margin: 0px;
+    height: 0px;
+}
+
+.co {
+    height: 80vh;
+    background: cornsilk;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.nt {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: skyblue;
+    border-radius: 8px;
+    border: 2px solid red;
+    height: 400px;
+    width: 400px;
+    transition: all 1s ease-in-out;
+}
+
+.nt:hover {
+    /* rotates the object  */
+    transform: rotate(360deg);
+    /* moves the object  */
+    transform: skew(45deg);
+    /* increases or decreases the object */
+    transform: scale(1.5);
+    /* tranlates the object  */
+    transform: translate(123px, 123px);
+}
+
+
+/* Grid */
+
+.tain {
+    display: grid;
+    /* divides the page in n parts of respective size if the size is auto the the remaining width is given to that item fr means fraction repeat is used to make n parts of same size grid-gap gives margin to each element */
+    grid-template-columns: 300px 100px 100px;
+    grid-template-columns: 300px auto 100px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 2rem;
+    /* this divides the height with respect to the proportion given  */
+    grid-template-rows: 1fr 1fr 4fr;
+    /* auto is used to specify the height of the rows that aren't specified */
+    grid-auto-rows: 2fr;
+    /* this helps to set different row and column gaps  */
+    /* grid-row-gap: 2rem;
+    grid-column-gap: 4rem; */
+    /* auto-fill is used to distribute the total screen space evenly amoung all the items  */
+    /* minmax is used to set the minimum width and maximum width */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-areas: 'navibar navibar navibar navibar' 'sect sect sect aside' 'footer footer footer footer';
+}
+
+.item {
+    background: bisque;
+    border: 2px solid red;
+    padding: 15px 5px;
+}
+
+.item:first-child {
+    /* this will increase the item size horizontally until the number of lines in end isn't reached */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* this will increase the item size vertically until the number of lines in end isn't reached */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* this will directly increase the item size by 3 items  */
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+}
+
+#navibar {
+    grid-area: navibar;
+}
+
+#sect {
+    grid-area: sect;
+}
+
+#aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* grid using media query */
+
+.ins {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'navibar navibar navibar navibar' 'sect sect sect aside' 'footer footer footer footer';
+}
+
+.border-now {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: darkseagreen;
+}
+
+nav {
+    grid-area: navibar;
+}
+
+section {
+    grid-area: sect;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:300px) {
+    body {
+        background-color: rgb(180, 227, 243);
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    body {
+        background-color: rgb(21, 173, 173);
+    }
+    .ins {
+        grid-template-areas: 'navibar navibar navibar navibar' 'sect sect sect sect' 'aside aside aside' 'footer footer footer footer';
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    body {
+        background-color: royalblue;
+    }
+    .ins {
+        grid-template-areas: 'navibar navibar navibar navibar' 'sect sect sect sect' 'aside aside aside' 'footer footer footer footer';
+    }
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    body {
+        background-color: blue;
+    }
+    .ins {
+        grid-template-areas: 'navibar navibar navibar navibar' 'sect sect sect sect' 'aside aside aside' 'footer footer footer footer';
+    }
+    span {
+        display: block;
+        text-align: center;
+    }
+    aside {
+        display: none;
+    }
+}

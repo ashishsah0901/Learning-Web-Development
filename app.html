@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!-- comment here by ctrl + / -->
+<html lang="en">
+
+<head>
+
+    <!-- Tags  -->
+    <!-- this tell search engine that we will use UTF-8 charset  -->
+    <meta charset="UTF-8">
+    <!-- this makes website compatible with all size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is for internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- this is the description of our website -->
+    <meta name="description" content="This is our first website made while learning">
+    <!-- these are the keywords used for searching our website -->
+    <meta name="keywords" content="first website">
+    <!-- this helps to either show or hide website fro search engines -->
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+
+    <!-- Title  -->
+    <!-- this is the content shown on the tab as title -->
+    <title>Title of my web page</title>
+
+</head>
+
+<!-- internal CSS  -->
+<style>
+    /* everthing before { is the target everything in the html will be given this CSS style  */
+    /* . is used to target class and # is used for seleceting id  */
+    /* whichever style will be later added in the order is given more preference */
+    /* by specifying important keyword it can't be changed  */
+    
+    p {
+        background-color: pink !important;
+        color: black;
+    }
+</style>
+
+<!-- this is the way to link css or external css -->
+<link rel="stylesheet" href="app.css">
+<!-- this is the way to link external fonts to CSS  -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+<body>
+    <!-- ShortCuts -->
+    <!-- Lorem30 generates 30 words -->
+    <!-- ctrl+enter helps to move to new line -->
+    <!-- p*20 makes 20 <p></p> tags -->
+
+    <!-- Headings -->
+    <!-- this the boldest header -->
+    <h1>Ashish</h1>
+    <h2>Ashish</h2>
+    <h3>Ashish</h3>
+    <h4>Ashish</h4>
+    <h5>Ashish</h5>
+    <!-- this is the smallest header -->
+    <h6>Sah</h6>
+
+    <!-- LineBreak -->
+    <!-- hr is used for a horizontal line -->
+    <hr>
+
+    <!-- Paragraphs -->
+    <!-- p is used for paragraph -->
+    <!-- we can specify multiple classes to one tag -->
+    <p class="blueBackground redColor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dicta ipsum explicabo, molestias, nostrum qui quos, modi nisi consectetur id reiciendis nihil ducimus sit tempora natus excepturi magnam iste neque?
+    </p>
+    <p id="para">Lorem ipsum dolor sit amet consectetur
+        <!--em is used for italic texts--><em id="emstyling">this is by em</em> adipisicing elit. Odit, fugit. Reiciendis necessitatibus soluta similique nesciunt aperiam ad officia eum
+        <!--b is used for bold texts but not recommended--><b>this is bold</b> quae tempora laudantium quas sint id fugit
+        <!--strong is used for bold texts--><strong>this is by strong</strong> ipsam dolorem fugiat sapiente cum,
+        <!--br is used for line break--><br> deserunt doloribus et suscipit
+        <!--i is used for italic texts but not recommended--><i>this is italic</i> sit consequuntur hic quibusdam! Veniam?
+    </p>
+    <!-- this adds links which can be opened by clicking on the text provided -->
+    <!-- target="_blank" helps to open in new tab  -->
+
+    <!-- ImageLoading and links -->
+    <a href="https://google.com" target="_blank"> Go to google</a><br>
+    <a href="https://facebook.com" target="_blank"> Go to Facebook</a><br>
+    <!-- this is to add internal links -->
+    <a href="/app.css" target="_blank" App css file></a>
+    <!-- this adds image and is image loading fails the the content in alt is shown  -->
+    <img src="ashish.jpg" alt="Error Loading Image">
+    <!-- adds remote image we can set height and width too but its not recommended-->
+    <img src="https://source.unsplash.com/user/erondu/200x200" alt="No Image found" width="200" height="100">
+
+    <!-- Lists -->
+    <!-- unordered list  type helps to specify th type used for marking-->
+    <ul type="disc">
+        <li>this is first element of unordered list</li>
+        <li>this is second element of unordered list</li>
+        <ol>
+            <li>Ordered list inside unordered list</li>
+        </ol>
+        <li>this is third element of unordered list</li>
+    </ul>
+    <!-- ordered list type helps to specify th type used for marking -->
+    <ol type="a">
+        <li>this is first element of ordered list</li>
+        <li>this is second element of ordered list</li>
+        <ul>
+            <li>Unordered lost inside ordered list</li>
+        </ul>
+        <li>this is third element of ordered list</li>
+    </ol>
+    <!-- this id for the backend testing of custom feed  -->
+    <nav>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="/project1">Project1</a></li>
+            <li class="item"><a href="/project2">Project2</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tables -->
+    <table>
+        <!-- this is the heading of the table  -->
+        <thead>
+            <!-- this is one row of the table   -->
+            <tr>
+                <!-- these are the heading of each column -->
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <!-- this the body of table  -->
+        <tbody>
+            <tr>
+                <!-- this is the data of each row -->
+                <td>Ashish</td>
+                <td>Sah</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>Anuradha</td>
+                <td>Sah</td>
+                <td>1234567893</td>
+            </tr>
+            <tr>
+                <td>Anmol</td>
+                <td>Sah</td>
+                <td>1234567892</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Forms -->
+    <!-- action attribute helps to submit the data in the form to the backend like backend.php  -->
+    <form action="backend.php">
+        <!-- label is used as label for any field the id and for should be same and whenever you click of label the input is selected automaticaly -->
+        <label for="input_name">Name</label>
+        <!-- div is used to make the next part move to new line and everything inside it is occupied in one line -->
+        <div>
+            <input type="text" name="name" id="input_name">
+        </div>
+        <!-- br is used to make a line break but its not recommended as we'll it with css  -->
+        <br>
+        <div>
+            Age: <input type="number" name="age">
+        </div>
+        <br>
+        <div>
+            <!-- name is used by the backend for accessing the tag -->
+            Email: <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <!-- date gives us options to select date form  -->
+            Date: <input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            <!-- checkbox helps to take true of false values checked make the box checked by default -->
+            Are you ready: <input type="checkbox" name="ready" checked>
+        </div>
+        <br>
+        <div>
+            <!-- radio helps to select things by keeping the name same we can restrict to select only one -->
+            Gender: Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other <input type="radio" name="gender">
+        </div>
+        <br>
+        <div>
+            <!-- helps to take large input like paragraph from user cols increases width and rows inceases height -->
+            Write about yourself: <br> <textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="Car" id="car">
+                <option value="indica">Indica</option>
+                <option value="swift" selected>Swift</option>
+                <option value="wagenar">Wagenar</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- this help to submit or reset the form or acts like a button -->
+            <input type="submit" name="Submit Now">
+            <input type="reset" name="Reset">
+        </div>
+    </form>
+
+    <!-- Inline and Block  -->
+    <!-- <p></p> <div></div> <img></img> is a block element -->
+    <!-- style attribute is used for adding inline CSS to any tag but its not recommended as it creates a mess -->
+    <p style="border: 2px solid red;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, cumque. Nisi perspiciatis possimus fugiat voluptatum enim unde esse ex assumenda.</p>
+    <p style="border: 2px solid blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptates?</p>
+    <!-- <span></span> <strong<>/strong/> <a></a> <li></li> <em></em>  is a n inline element style is used to give inline css-->
+    <span style="border: 2px solid red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, sit?</span>
+    <span style="border: 2px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, sit?</span>
+
+    <!-- Class and ID -->
+    <!-- id is used to access the element and must be unique in the page -->
+    <!-- class is a css class which defines the style and it cam be given to any element for styling instead of making style of each one of them many classes can be given to one element -->
+    <div id="idName" class="redBg backBorder">
+        This is a box
+    </div>
+    <div class="redBg"></div>
+
+    <!-- Emmet -->
+    <!-- . creates anything with class  -->
+    <span class="redBg"></span>
+    <!-- # create anything with id  -->
+    <span id="spanID"></span>
+    <!-- Emmet takes <div></div> as default  -->
+    <div class="redBg"></div>
+    <!-- anything * number gives copy of the element number times -->
+    <spam class="classBg classBorder classStyle">First</spam>
+    <spam class="classBg classBorder classStyle">Second</spam>
+    <spam class="classBg classBorder classStyle">Third</spam>
+    <spam class="classBg classBorder classStyle">Fourth</spam>
+
+    <!-- Entities -->
+    <!-- &nbsp; is used to generate a space between  -->
+    <p>Lorem ipsum dolor sit amet,&nbsp; consectetur adipisicing elit. Quam, nihil!</p>
+    <!-- &lt = < and &gt = > -->
+    <p>Lorem ipsum dolor sit &lt;p&gt; amet consectetur adipisicing elit. Voluptate, error!</p>
+    <!-- &pound; = pound currency -->
+    <p>Lorem ipsum dolor sit &pound; amet consectetur adipisicing elit. Voluptate, error!</p>
+    <!-- &copy; = copyright symbol -->
+    <p>Lorem ipsum dolor sit &copy; amet consectetur adipisicing elit. Voluptate, error!</p>
+    <!-- &#8203 is an empty character -->
+    <p>Lorem ipsum dolor sit &#8203; amet consectetur adipisicing elit. Voluptate, error!</p>
+
+    <!-- Semantic Tags -->
+    <!-- these are the ags used to specify which protion will appear where in th website  -->
+    <header></header>
+    <article></article>
+    <details></details>
+    <main></main>
+    <summary></summary>
+    <nav></nav>
+    <section></section>
+    <!-- and many more -->
+
+    <!-- For CSS Box model -->
+    <div class="box">
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi ullam nobis repudiandae obcaecati, similique recusandae iure culpa sunt non.</p>
+    </div>
+    <div class="box">
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi ullam nobis repudiandae obcaecati, similique recusandae iure culpa sunt non.</p>
+    </div>
+    <div class="box">
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi ullam nobis repudiandae obcaecati, similique recusandae iure culpa sunt non.</p>
+    </div>
+
+    <!-- For CSS alignment -->
+    <div class="container">
+        <div id="fruit" class="item">
+            <p id="fruitspara" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt magni a dolor nam saepe aperiam natus quisquam assumenda laboriosam soluta.
+            </p>
+        </div>
+        <div id="vegetable" class="item">
+            <p id="vegetablepara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste velit sed animi earum quidem. Sequi in minus incidunt, sed iure quas optio ipsum est error maiores ea a recusandae? Cum.
+            </p>
+        </div>
+        <div id="grocery" class="item">
+            <p id="grocerypara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure rem similique fugiat dicta odio, voluptatem numquam, modi autem repudiandae magni perspiciatis provident explicabo, aliquam iusto eos libero beatae. Eius.
+            </p>
+        </div>
+    </div>
+
+    <!-- Psuedo selector in CSS  -->
+    <div class="selec" id="cont1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae maxime consequatur facere deleniti, incidunt vel explicabo accusantium? Odit ipsa autem maxime porro nostrum! Laboriosam nobis voluptates repellat, ducimus voluptatibus
+            soluta delectus mollitia iusto molestias qui accusamus animi architecto modi!
+        </p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Read More</button>
+    </div>
+
+    <!-- Navigation Menu  -->
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="searchFor" id="Search" placeholder="Enter to search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Display Properties for CSS  -->
+    <header class="top">
+        <img src="https://source.unsplash.com/user/erondu/200x200" alt="Sorry No image found">
+        <h2>Welcome to my website</h2>
+    </header>
+    <div class="con">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quibusdam, cupiditate esse unde architecto error modi eum rerum amet maxime vel debitis ipsa! Quidem, illum reiciendis. Dolore, minus quos! Autem perferendis architecto eos nulla dolorem
+            vero vitae ad unde quos?</p>
+    </div>
+    <div class="con">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quibusdam, cupiditate esse unde architecto error modi eum rerum amet maxime vel debitis ipsa! Quidem, illum reiciendis. Dolore, minus quos! Autem perferendis architecto eos nulla dolorem
+            vero vitae ad unde quos?</p>
+    </div>
+    <div class="con">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quibusdam, cupiditate esse unde architecto error modi eum rerum amet maxime vel debitis ipsa! Quidem, illum reiciendis. Dolore, minus quos! Autem perferendis architecto eos nulla dolorem
+            vero vitae ad unde quos?</p>
+    </div>
+
+    <!-- Positioning in CSS  -->
+    <div class="boxes" id="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem animi officia harum praesentium. Non vero praesentium harum a atque quas eum odio laboriosam possimus aspernatur laborum, nostrum quia illo placeat?</div>
+    <div class="boxes" id="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam voluptatem laboriosam saepe non ipsam aliquid iste illum perspiciatis soluta. Laborum impedit iste quas, nemo consequuntur ducimus facilis quam nisi!</div>
+    <div class="boxes" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quo labore soluta sequi laboriosam pariatur, reprehenderit, inventore nesciunt accusantium nisi dolore est eius ea! Unde ut neque assumenda corrupti minus!</div>
+    <div class="boxes" id="box4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, earum! Et sed doloribus eveniet aliquam consequuntur deserunt voluptatum debitis quibusdam labore nisi dicta, adipisci molestias molestiae exercitationem ea perspiciatis consectetur!</div>
+
+    <!-- Website  -->
+    <header class="header">
+        <!-- Left for logo and information -->
+        <div class="left">
+            <img src="https://source.unsplash.com/user/erondu/200x200" alt="">
+            <div>Ashish Gym</div>
+        </div>
+        <!-- Center for navigation menu  -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right for search or any thing for contact  -->
+        <div class="right">
+            <button class="button">Call us</button>
+            <button class="button">Email Us</button>
+        </div>
+        <div class="conta">
+            <h1>Join Our GYM</h1>
+            <form action=".php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter you name..">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter you age..">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter you email..">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter you phone number..">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter you gender..">
+                </div>
+                <button id="button" onclick="hide()" class="button">Submit</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Visibility and z index -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+    <!-- FlexBox -->
+    <div class="container">
+        <div class="item" id="item1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, doloribus.
+        </div>
+        <div class="item" id="item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, iure!</div>
+        <div class="item" id="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dignissimos.</div>
+    </div>
+
+    <!-- Responsive Design  -->
+    <div class="container">
+        <h4 id="id1">This is first</h14>
+            <h4 id="id2">This is second</h4>
+            <h4 id="id3">This is third</h4>
+    </div>
+
+    <!-- Media Query -->
+    <div class="box" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit totam praesentium error eaque similique dolorem. Animi inventore deleniti quas eos!</div>
+    <div class="box" id="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis reprehenderit facere odio laborum aperiam animi, impedit aut officiis assumenda maxime!</div>
+    <div class="box" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempore consequatur. Quae non eaque aspernatur laborum veritatis explicabo quidem vel?</div>
+    <div class="box" id="box4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nulla ipsum vitae iusto cupiditate fugit saepe natus! Optio, omnis unde.</div>
+
+    <!-- More on selectors -->
+    <div class="drum">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, necessitatibus.</p>
+                </li>
+            </ul>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, porro.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eum.</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, est!</p>
+
+    <!-- attribute and nth child pseudo selector  -->
+    <div class="ash">
+        <a href="http://instagram.com" target="_blank">Go to instagram</a>
+        <a href="http://google.com" target="_self">Go to google</a>
+        <form action="" class="form-get">
+            <input type="text" placeholder="Enter your name...">
+            <input type="text" placeholder="Enter your passowrd...">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item 1</li>
+            <li class="item" id="item2">item 2</li>
+            <li class="item" id="item3">item 3</li>
+            <li class="item" id="item4">item 4</li>
+            <li class="item" id="item5">item 5</li>
+        </ul>
+    </div>
+
+    <!-- before and after !-->
+    <header>
+        <nav class="nav_bar">
+            <ul class="nav">
+                <li class="item1">Home</li>
+                <li class="item2">About</li>
+                <li class="item3">Services</li>
+                <li class="item4">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to my first website</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus? Corrupti eaque optio esse repellendus rerum illum aut quasi tempora! Suscipit natus maiores pariatur asperiores quod omnis numquam repudiandae beatae.</p>
+    </section>
+    <hr>
+
+    <!-- box shadow and text shadow -->
+    <div class="container">
+        <div class="card" id="card1">
+            <h4>card1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis id magnam in consequuntur, accusantium asperiores possimus eos, iure quod rerum officiis non. Deleniti eveniet velit molestiae perspiciatis aperiam fugit sunt?</p>
+        </div>
+        <div class="card" id="card2">
+            <h4>card2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis id magnam in consequuntur, accusantium asperiores possimus eos, iure quod rerum officiis non. Deleniti eveniet velit molestiae perspiciatis aperiam fugit sunt?</p>
+        </div>
+        <div class="card" id="card3">
+            <h4>card3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis id magnam in consequuntur, accusantium asperiores possimus eos, iure quod rerum officiis non. Deleniti eveniet velit molestiae perspiciatis aperiam fugit sunt?</p>
+        </div>
+        <div class="card" id="card4">
+            <h4>card4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis id magnam in consequuntur, accusantium asperiores possimus eos, iure quod rerum officiis non. Deleniti eveniet velit molestiae perspiciatis aperiam fugit sunt?</p>
+        </div>
+    </div>
+
+    <!-- vaiables / custom properties  -->
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- keyframes and animations -->
+    <div class="contains">
+        <div class="boxes">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+    </div>
+
+    <!-- Transitions -->
+    <div class="container">
+        <div id="box">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+    </div>
+
+    <!-- Transform -->
+    <div class="co">
+        <div class="nt">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, fugit.
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="tain">
+        <div class="item" id="navibar">Home About Contact Us</div>
+        <div class="item" id="sect">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, perspiciatis vel exercitationem cumque enim repudiandae. Recusandae animi magni placeat nostrum.</div>
+        <div class="item" id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, deserunt?
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet.</footer>
+        <div class="item">This is item 1</div>
+        <div class="item">This is item 2</div>
+        <div class="item">This is item 3</div>
+        <div class="item">This is item 4</div>
+        <div class="item">This is item 5</div>
+        <div class="item">This is item 6</div>
+        <div class="item">This is item 7</div>
+    </div>
+
+    <!-- Grid using media query -->
+    <div class="ins">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>Contact Us</span>
+            <span>Help</span>
+        </nav>
+        <section class="border-now">
+            <h3>Learn CSS Grid</h3>
+        </section>
+        <aside class="border-now">
+            <h2>More About Us</h2>
+        </aside>
+    </div>
+    <footer>Code to learn web development</footer>
+    <!-- this is the way to link js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
