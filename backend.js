@@ -130,16 +130,50 @@ app.get("/", (req, res) => {
 });
 // this hamdles the ppst request made from the webpage or the url specified
 app.post("/", (req, res) => {
-    // req.body gives an object of all the attributes send by the post requesr 
-    let name = req.body.name;
-    let age = req.body.age;
-    let gender = req.body.gender;
-    let address = req.body.address;
-    let more = req.body.more;
-    let data = `${name} is a ${gender}, ${age} years old living at ${address}. More about ${name}: ${more}`;
-    fs.writeFileSync('output.txt', data);
-    const params = {
-        'message': "Form Submitted Successfully!"
-    };
-    res.status(200).render('index.pug', params);
+        // req.body gives an object of all the attributes send by the post requesr 
+        let name = req.body.name;
+        let age = req.body.age;
+        let gender = req.body.gender;
+        let address = req.body.address;
+        let more = req.body.more;
+        let data = `${name} is a ${gender}, ${age} years old living at ${address}. More about ${name}: ${more}`;
+        fs.writeFileSync('output.txt', data);
+        const params = {
+            'message': "Form Submitted Successfully!"
+        };
+        res.status(200).render('index.pug', params);
+    })
+// this is how we set-up our mongoDb for our backend and we can connect with the localhost and the database by specifying the name of the database
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true, useUnifiedTopology: true });
+// this is how we connect with mongoDb
+let db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function() {
+    console.log("We are connected to database");
+});
+// to store data in database we use schema which is the skeleton of the data which can be stored in the database the schema takes an object consisting of the key and the daata type of it
+let kittySchema = new mongoose.Schema({
+    name: String
+});
+// we can change the schema this way too 
+kittySchema.methods.speak = function() {
+        let greeting = this.name ? "Meow my name is " + this.name : "meow I don't have a name";
+        console.log(greeting);
+    }
+// this converts the schema to a model which can't be changed later 
+let kitten = mongoose.model('Kitten', kittySchema);
+// after model creation we can create documents which can be stored in the database
+let ashishKitty = new kitten({ name: "Ashish" });
+console.log(ashishKitty.name);
+ashishKitty.speak();
+// to save the data to the database we have to run this code 
+ashishKitty.save(function(error, data) {
+    if (error) return console.error(error);
+    data.speak();
+});
+// to do search operation on the database we use this function 
+kitten.find({ name: "ashishKitty" }, function(eroe, data) {
+    if (error) return console.error(error);
+    console.log(data);
 })
